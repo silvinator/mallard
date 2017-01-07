@@ -17,6 +17,16 @@ const options = {
     }
 };
 
+const gameAlerts = {
+    "Dolphin": 2,
+    "Hearthstone": 2,
+    "FINAL FANTASY XIV": 2,
+    "League of Legends": 5,
+    "DOTA 2": 5,
+    "Counter-Strike: Global Offensive": 5,
+    "Overwatch": 6
+};
+
 const randomElement = (arr) => {
     let rand = Math.floor(Math.random() * (arr.length));
     return arr[rand];
