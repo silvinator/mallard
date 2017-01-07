@@ -79,7 +79,6 @@ bot.on("guildMemberSpeaking", (member, speaking) => {
                         bot.yesno = false;
 
                     } else if (data.results === "no") {
-                        bot.channel.sendMessage("fine fuck dave anyways");
                         bot.yesno = false;
 
                     }
@@ -160,7 +159,7 @@ bot.on("message", msg => {
                 });
                 bot.dispatcher = dispatcher;
 
-            } else msg.channel.sendMessage("I'm not in voice, but fuck Dave.");
+            } else msg.channel.sendMessage("I'm not in voice.");
         }
         if (msg.content === "!stfu") {
             if (bot.dispatcher) {
